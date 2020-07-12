@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chat_profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/chat_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@id/chat_profile_image"
+            android:layout_toRightOf="@id/chat_profile_image"
+            android:text="username"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:id="@+id/img_on"
+            android:visibility="gone"
+            android:layout_below="@id/chat_username"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-15dp"
+            android:src="#05df29"
+            android:layout_toRightOf="@id/chat_profile_image"
+            android:layout_toEndOf="@id/chat_profile_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chat_username"
+            android:layout_toRightOf="@id/chat_profile_image"
+            android:paddingTop="5dp"
+            android:id="@+id/last_msg"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:maxLines="1"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
