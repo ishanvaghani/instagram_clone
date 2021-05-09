@@ -1,2 +1,2 @@
-# instagram_clone
-This is the app developed using android kotlin and firebase. I have develop this app like instagram not completely. But includes many modules of Instagram app.
+# Instagram Clone
+This is Instagram clone android application built with Android, Kotlin, Firebase, Firebase Cloud Messaging etc. Functionality:- Upload image, add story, message another user, receive notifications etc.
